@@ -1,0 +1,25 @@
+{
+    "development": {
+      "username": "hcmuscodev",
+      "password": "Aimabietduoc123",
+      "database": "hcmuscodev_codev",
+      "port": 3306,
+      "host": "116.118.50.148",
+      "dialect": "mysql"
+    },
+    "test": {
+      "username": "sql6483374",
+      "password": "Dtpt4EfH6q",
+      "database": "sql6483374",
+      "host": "sql6.freemysqlhosting.net",
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "root",
+      "password": "Hcmus.codev2022",
+      "database": "hcmus_codev",
+      "host": "codev.cfjseq2htxc8.ap-southeast-1.rds.amazonaws.com",
+      "dialect": "mysql"
+    }
+  }
+  
