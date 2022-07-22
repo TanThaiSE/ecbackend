@@ -8,22 +8,10 @@ exports.signInLocal= (username, password) => db.execute(
     `
 )
 
-exports.findAccount = (infoForgotPass) => db.execute(
+
+exports.register =(fullName,phoneNumber,email,password,address) => db.execute(
     `
-        SELECT a.id
-        FROM account a
-        WHERE a.email= '${infoForgotPass.email}'
-    `
-)
-exports.findExistAccount = (idAcc) => db.execute(
-    `
-        SELECT a.id
-        FROM account a
-        WHERE a.id= '${idAcc}'
-    `
-)
-exports.updatePassword = (password, idAcc) => db.execute(
-    `
-        UPDATE account SET password ='${password}' WHERE id='${idAcc}'
+    INSERT INTO user (fullName, phoneNumber, email, password,address,role)
+    VALUES ('${fullName}', '${phoneNumber}', '${email}','${password}','${address}','1');
     `
 )

@@ -6,8 +6,8 @@ const loginController = require('./login.controller');
 // routing goes here
 router.post('/signInLocal', loginController.signInLocal);
 
-router.post('/forgotPassword',loginController.forgotPassword);
 
-router.post('/getNewPassword',loginController.getNewPassword);
+router.post('/register', loginController.register);
+
 //
 module.exports = router;
