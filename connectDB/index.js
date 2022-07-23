@@ -5,8 +5,10 @@ const config = require('../config/database.json');
 const db = mysql.createConnection({
 	host: config.host,
 	user: config.user,
-	password: config.pass,
-	database: config.db,
+	port:config.port,
+	password: config.password,
+	database: config.database,
+
 });
 
 module.exports = db;

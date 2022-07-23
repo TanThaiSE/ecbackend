@@ -39,7 +39,7 @@ exports.signInLocal = async (req, res) => {
 
 
 exports.register = async (req, res) => {
-    let { fullName,phoneNumber,email,password,address } = req.body.data;
+    let { fullName,phoneNumber,email,password,address } = req.body;
     let account = await loginService.register(fullName,phoneNumber,email,password,address);
      if (account) {
         return res.status(200).json({ msg: 'Add account success' });

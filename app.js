@@ -4,8 +4,6 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
-
-const indexRouter = require('./routes/index');
 const apiRouter = require('./src/api/index');
 
 const app = express();
@@ -25,7 +23,6 @@ app.use(passport.initialize());
 
 
 // route
-app.use('/', indexRouter);
 app.use('/api/v1', apiRouter);
 
 //------------------------------------------------------------------------------------------------------------------------------------------------
